@@ -15,9 +15,6 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    //Oliver was here
-    //I AM THE MACHINE
-    // hi its luke
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }

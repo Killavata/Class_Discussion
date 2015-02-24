@@ -15,6 +15,7 @@
 		83DDFAED1A9CD12300A2D594 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DDFAEC1A9CD12300A2D594 /* Images.xcassets */; };
 		83DDFAF01A9CD12300A2D594 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */; };
 		83DDFAFC1A9CD12400A2D594 /* Class_DiscussionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */; };
+		83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFB061A9CD62B00A2D594 /* Teacher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		83DDFAF51A9CD12400A2D594 /* Class_DiscussionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Class_DiscussionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DDFAFA1A9CD12400A2D594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_DiscussionTests.m; sourceTree = "<group>"; };
+		83DDFB051A9CD62B00A2D594 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
+		83DDFB061A9CD62B00A2D594 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				83DDFAE11A9CD12300A2D594 /* AppDelegate.m */,
 				83DDFAE61A9CD12300A2D594 /* ViewController.h */,
 				83DDFAE71A9CD12300A2D594 /* ViewController.m */,
+				83DDFB051A9CD62B00A2D594 /* Teacher.h */,
+				83DDFB061A9CD62B00A2D594 /* Teacher.m */,
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
 				83DDFAEC1A9CD12300A2D594 /* Images.xcassets */,
 				83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */,
@@ -225,6 +230,7 @@
 				83DDFAE21A9CD12300A2D594 /* AppDelegate.m in Sources */,
 				83DDFAE51A9CD12300A2D594 /* Class_Discussion.xcdatamodeld in Sources */,
 				83DDFAE81A9CD12300A2D594 /* ViewController.m in Sources */,
+				83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */,
 				83DDFADF1A9CD12300A2D594 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
