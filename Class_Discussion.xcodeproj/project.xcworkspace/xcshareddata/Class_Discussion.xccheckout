@@ -5,11 +5,15 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 	<string>252CB984-7C3E-4068-BF32-7BF79ACD70E0</string>
 =======
 	<string>E6F2ACDB-1F8E-4A59-AB52-61B132DBEC4A</string>
 >>>>>>> Stashed changes
+=======
+	<string>03B7B824-C963-4F9A-9689-B8E8AA2FBEE6</string>
+>>>>>>> origin/Stepan
 	<key>IDESourceControlProjectName</key>
 	<string>Class_Discussion</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
