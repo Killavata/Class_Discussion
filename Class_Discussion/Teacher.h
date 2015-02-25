@@ -12,6 +12,7 @@
 
 @property NSString* name;
 @property NSString* department;
+@property NSString* accountType;//Change from string to a new class
 
 
 @end
