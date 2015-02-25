@@ -5,11 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< Updated upstream
 	<string>252CB984-7C3E-4068-BF32-7BF79ACD70E0</string>
+=======
+	<string>E6F2ACDB-1F8E-4A59-AB52-61B132DBEC4A</string>
+>>>>>>> Stashed changes
 	<key>IDESourceControlProjectName</key>
 	<string>Class_Discussion</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< Updated upstream
 		<key>88C74DB159072AA0E7876F8F8B4712DB6E758C39</key>
 		<string>https://github.com/Killavata/Class_Discussion.git</string>
 	</dict>
@@ -18,21 +23,41 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>88C74DB159072AA0E7876F8F8B4712DB6E758C39</key>
+=======
+		<key>81D2539D-5A16-434F-A865-CADD6CCC7BBA</key>
+		<string>https://github.com/Killavata/Class_Discussion.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Class_Discussion.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>81D2539D-5A16-434F-A865-CADD6CCC7BBA</key>
+>>>>>>> Stashed changes
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Killavata/Class_Discussion.git</string>
 	<key>IDESourceControlProjectVersion</key>
+<<<<<<< Updated upstream
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>88C74DB159072AA0E7876F8F8B4712DB6E758C39</string>
+=======
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>81D2539D-5A16-434F-A865-CADD6CCC7BBA</string>
+>>>>>>> Stashed changes
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< Updated upstream
 			<string>88C74DB159072AA0E7876F8F8B4712DB6E758C39</string>
+=======
+			<string>81D2539D-5A16-434F-A865-CADD6CCC7BBA</string>
+>>>>>>> Stashed changes
 			<key>IDESourceControlWCCName</key>
 			<string>Class_Discussion</string>
 		</dict>
