@@ -17,7 +17,11 @@
 		83DDFAF01A9CD12300A2D594 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */; };
 		83DDFAFC1A9CD12400A2D594 /* Class_DiscussionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */; };
 		83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFB061A9CD62B00A2D594 /* Teacher.m */; };
+<<<<<<< HEAD
 		C211C2941A9E34950099DA28 /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = C211C2931A9E34950099DA28 /* Section.m */; };
+=======
+		FB476D401A9E35370040FD39 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FB476D3F1A9E35370040FD39 /* Student.m */; };
+>>>>>>> Oliver
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +53,13 @@
 		83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_DiscussionTests.m; sourceTree = "<group>"; };
 		83DDFB051A9CD62B00A2D594 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		83DDFB061A9CD62B00A2D594 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		C211C2921A9E34950099DA28 /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
 		C211C2931A9E34950099DA28 /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+=======
+		FB476D3E1A9E35370040FD39 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		FB476D3F1A9E35370040FD39 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+>>>>>>> Oliver
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +122,8 @@
 				C211C2921A9E34950099DA28 /* Section.h */,
 				C211C2931A9E34950099DA28 /* Section.m */,
 				83DDFB051A9CD62B00A2D594 /* Teacher.h */,
+				FB476D3E1A9E35370040FD39 /* Student.h */,
+				FB476D3F1A9E35370040FD39 /* Student.m */,
 				83DDFB061A9CD62B00A2D594 /* Teacher.m */,
 >>>>>>> origin/Luke
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
@@ -256,7 +267,11 @@
 				830C243E1A9E357A00FBAD6A /* Account.m in Sources */,
 				83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */,
 				83DDFADF1A9CD12300A2D594 /* main.m in Sources */,
+<<<<<<< HEAD
 				C211C2941A9E34950099DA28 /* Section.m in Sources */,
+=======
+				FB476D401A9E35370040FD39 /* Student.m in Sources */,
+>>>>>>> Oliver
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +396,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Class_Discussion/Info.plist;
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+>>>>>>> Oliver
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -392,7 +411,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Class_Discussion/Info.plist;
+<<<<<<< HEAD
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+=======
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+>>>>>>> Oliver
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -411,6 +434,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Class_DiscussionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Class_Discussion.app/Class_Discussion";
@@ -426,6 +450,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Class_DiscussionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Class_Discussion.app/Class_Discussion";
