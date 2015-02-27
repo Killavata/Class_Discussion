@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>347CF51A-CEAB-4197-922A-D63837BB7400</string>
+	<string>03B7B824-C963-4F9A-9689-B8E8AA2FBEE6</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Class_Discussion</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6006F167-C8A3-4470-B01A-E2642634B246</key>
+		<key>88C74DB159072AA0E7876F8F8B4712DB6E758C39</key>
 		<string>https://github.com/Killavata/Class_Discussion.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Class_Discussion.xcodeproj/project.xcworkspace</string>
+	<string>Class_Discussion.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6006F167-C8A3-4470-B01A-E2642634B246</key>
+		<key>88C74DB159072AA0E7876F8F8B4712DB6E758C39</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Killavata/Class_Discussion.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6006F167-C8A3-4470-B01A-E2642634B246</string>
+	<string>88C74DB159072AA0E7876F8F8B4712DB6E758C39</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6006F167-C8A3-4470-B01A-E2642634B246</string>
+			<string>88C74DB159072AA0E7876F8F8B4712DB6E758C39</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Class_Discussion</string>
 		</dict>
