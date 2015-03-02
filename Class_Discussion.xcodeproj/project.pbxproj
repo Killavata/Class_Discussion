@@ -74,10 +74,8 @@
 		830C243B1A9E353A00FBAD6A /* Teacher_and_account */ = {
 			isa = PBXGroup;
 			children = (
-				83DDFB061A9CD62B00A2D594 /* Teacher.m */,
 				83DDFB051A9CD62B00A2D594 /* Teacher.h */,
-				C2E3691F1AA0CB02001B24DE /* Section.h */,
-				C2E369201AA0CB02001B24DE /* Section.m */,
+				83DDFB061A9CD62B00A2D594 /* Teacher.m */,
 				830C243C1A9E357A00FBAD6A /* Account.h */,
 				830C243D1A9E357A00FBAD6A /* Account.m */,
 			);
@@ -110,6 +108,8 @@
 				83DDFAE11A9CD12300A2D594 /* AppDelegate.m */,
 				83DDFAE61A9CD12300A2D594 /* ViewController.h */,
 				83DDFAE71A9CD12300A2D594 /* ViewController.m */,
+				C2E3691F1AA0CB02001B24DE /* Section.h */,
+				C2E369201AA0CB02001B24DE /* Section.m */,
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
 				83DDFAEC1A9CD12300A2D594 /* Images.xcassets */,
 				83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */,
