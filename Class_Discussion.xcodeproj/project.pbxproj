@@ -17,7 +17,11 @@
 		83DDFAF01A9CD12300A2D594 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */; };
 		83DDFAFC1A9CD12400A2D594 /* Class_DiscussionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */; };
 		83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFB061A9CD62B00A2D594 /* Teacher.m */; };
+<<<<<<< HEAD
 		C2E369211AA0CB02001B24DE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E369201AA0CB02001B24DE /* Section.m */; };
+=======
+		FB3B2D671AA0C92E00D3B8D1 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3B2D661AA0C92E00D3B8D1 /* Student.m */; };
+>>>>>>> origin/Oliver
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +53,13 @@
 		83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_DiscussionTests.m; sourceTree = "<group>"; };
 		83DDFB051A9CD62B00A2D594 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		83DDFB061A9CD62B00A2D594 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		C2E3691F1AA0CB02001B24DE /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
 		C2E369201AA0CB02001B24DE /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+=======
+		FB3B2D651AA0C92E00D3B8D1 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		FB3B2D661AA0C92E00D3B8D1 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+>>>>>>> origin/Oliver
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,8 @@
 				83DDFAE11A9CD12300A2D594 /* AppDelegate.m */,
 				83DDFAE61A9CD12300A2D594 /* ViewController.h */,
 				83DDFAE71A9CD12300A2D594 /* ViewController.m */,
+				FB3B2D651AA0C92E00D3B8D1 /* Student.h */,
+				FB3B2D661AA0C92E00D3B8D1 /* Student.m */,
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
 				83DDFAEC1A9CD12300A2D594 /* Images.xcassets */,
 				83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */,
@@ -249,7 +260,11 @@
 				83DDFAE51A9CD12300A2D594 /* Class_Discussion.xcdatamodeld in Sources */,
 				83DDFAE81A9CD12300A2D594 /* ViewController.m in Sources */,
 				830C243E1A9E357A00FBAD6A /* Account.m in Sources */,
+<<<<<<< HEAD
 				C2E369211AA0CB02001B24DE /* Section.m in Sources */,
+=======
+				FB3B2D671AA0C92E00D3B8D1 /* Student.m in Sources */,
+>>>>>>> origin/Oliver
 				83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */,
 				83DDFADF1A9CD12300A2D594 /* main.m in Sources */,
 			);
