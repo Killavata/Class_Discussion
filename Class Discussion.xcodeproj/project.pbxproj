@@ -14,6 +14,7 @@
 		FBC85CF11AC05A42003B4216 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC85CF01AC05A42003B4216 /* Images.xcassets */; };
 		FBC85CF41AC05A42003B4216 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC85CF21AC05A42003B4216 /* LaunchScreen.xib */; };
 		FBC85D001AC05A42003B4216 /* Class_DiscussionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC85CFF1AC05A42003B4216 /* Class_DiscussionTests.m */; };
+		FBC85D0B1AC05AAD003B4216 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC85D0A1AC05AAD003B4216 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FBC85CF91AC05A42003B4216 /* Class DiscussionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Class DiscussionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC85CFE1AC05A42003B4216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBC85CFF1AC05A42003B4216 /* Class_DiscussionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_DiscussionTests.m; sourceTree = "<group>"; };
+		FBC85D091AC05AAD003B4216 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		FBC85D0A1AC05AAD003B4216 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				FBC85CE81AC05A42003B4216 /* AppDelegate.m */,
 				FBC85CEA1AC05A42003B4216 /* ViewController.h */,
 				FBC85CEB1AC05A42003B4216 /* ViewController.m */,
+				FBC85D091AC05AAD003B4216 /* Student.h */,
+				FBC85D0A1AC05AAD003B4216 /* Student.m */,
 				FBC85CED1AC05A42003B4216 /* Main.storyboard */,
 				FBC85CF01AC05A42003B4216 /* Images.xcassets */,
 				FBC85CF21AC05A42003B4216 /* LaunchScreen.xib */,
@@ -168,6 +173,7 @@
 				TargetAttributes = {
 					FBC85CDF1AC05A42003B4216 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 686WQB365V;
 					};
 					FBC85CF81AC05A42003B4216 = {
 						CreatedOnToolsVersion = 6.2;
@@ -222,6 +228,7 @@
 				FBC85CEC1AC05A42003B4216 /* ViewController.m in Sources */,
 				FBC85CE91AC05A42003B4216 /* AppDelegate.m in Sources */,
 				FBC85CE61AC05A42003B4216 /* main.m in Sources */,
+				FBC85D0B1AC05AAD003B4216 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
