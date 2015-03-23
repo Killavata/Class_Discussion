@@ -10,4 +10,22 @@
 
 @implementation Student
 
+@synthesize year;
+@synthesize grade;
+@synthesize fullName;
+
+-(instancetype) init{
+    self.fullName = nil;
+    self.year = nil;
+    return self;
+}
+
+
+
+-(instancetype)initWithName:(NSString *)studentName andYear:(NSInteger *)studentYear{
+    self.year=studentYear;
+    self.fullName = studentName;
+    
+    return self;
+}
 @end
