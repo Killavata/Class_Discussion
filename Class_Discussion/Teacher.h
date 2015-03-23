@@ -12,8 +12,12 @@
 
 @property NSString* name;
 @property NSString* department;
+@property NSMutableArray* classes;
+
+
+
+//Secondary
 @property NSString* accountType;//Change from string to a new class
-//Should add a property of a class
 
 
 
