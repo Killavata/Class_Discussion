@@ -108,11 +108,8 @@
 				83DDFAE11A9CD12300A2D594 /* AppDelegate.m */,
 				83DDFAE61A9CD12300A2D594 /* ViewController.h */,
 				83DDFAE71A9CD12300A2D594 /* ViewController.m */,
-<<<<<<< HEAD
 				C2E3691F1AA0CB02001B24DE /* Section.h */,
 				C2E369201AA0CB02001B24DE /* Section.m */,
-=======
->>>>>>> origin/Luke
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
 				83DDFAEC1A9CD12300A2D594 /* Images.xcassets */,
 				83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */,
