@@ -11,7 +11,6 @@
 
 @interface Student : NSObject
 @property NSInteger *grade;
-@property NSInteger *year;
 @property NSInteger *year;//1,2,3 or 4 to denote freshman, sophomore, junior, senior.
 @property NSString *fullName;
 
