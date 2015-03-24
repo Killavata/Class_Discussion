@@ -17,6 +17,7 @@
 		83DDFAF01A9CD12300A2D594 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */; };
 		83DDFAFC1A9CD12400A2D594 /* Class_DiscussionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */; };
 		83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFB061A9CD62B00A2D594 /* Teacher.m */; };
+		C21381B11AC05E6800F41193 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21381B01AC05E6800F41193 /* TableViewController.m */; };
 		C2E369211AA0CB02001B24DE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E369201AA0CB02001B24DE /* Section.m */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class_DiscussionTests.m; sourceTree = "<group>"; };
 		83DDFB051A9CD62B00A2D594 /* Teacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teacher.h; sourceTree = "<group>"; };
 		83DDFB061A9CD62B00A2D594 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
+		C21381AF1AC05E6800F41193 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C21381B01AC05E6800F41193 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		C2E3691F1AA0CB02001B24DE /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
 		C2E369201AA0CB02001B24DE /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +77,8 @@
 		830C243B1A9E353A00FBAD6A /* Teacher_and_account */ = {
 			isa = PBXGroup;
 			children = (
+				C2E3691F1AA0CB02001B24DE /* Section.h */,
+				C2E369201AA0CB02001B24DE /* Section.m */,
 				83DDFB051A9CD62B00A2D594 /* Teacher.h */,
 				83DDFB061A9CD62B00A2D594 /* Teacher.m */,
 				830C243C1A9E357A00FBAD6A /* Account.h */,
@@ -105,11 +110,11 @@
 			children = (
 				830C243B1A9E353A00FBAD6A /* Teacher_and_account */,
 				83DDFAE01A9CD12300A2D594 /* AppDelegate.h */,
+				C21381AF1AC05E6800F41193 /* TableViewController.h */,
+				C21381B01AC05E6800F41193 /* TableViewController.m */,
 				83DDFAE11A9CD12300A2D594 /* AppDelegate.m */,
 				83DDFAE61A9CD12300A2D594 /* ViewController.h */,
 				83DDFAE71A9CD12300A2D594 /* ViewController.m */,
-				C2E3691F1AA0CB02001B24DE /* Section.h */,
-				C2E369201AA0CB02001B24DE /* Section.m */,
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
 				83DDFAEC1A9CD12300A2D594 /* Images.xcassets */,
 				83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */,
@@ -252,6 +257,7 @@
 				C2E369211AA0CB02001B24DE /* Section.m in Sources */,
 				83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */,
 				83DDFADF1A9CD12300A2D594 /* main.m in Sources */,
+				C21381B11AC05E6800F41193 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
