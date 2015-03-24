@@ -19,6 +19,7 @@
 		83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFB061A9CD62B00A2D594 /* Teacher.m */; };
 		C21381B11AC05E6800F41193 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21381B01AC05E6800F41193 /* TableViewController.m */; };
 		C2E369211AA0CB02001B24DE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E369201AA0CB02001B24DE /* Section.m */; };
+		FBB700D21AC1AE8000CB21A5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB700D11AC1AE7F00CB21A5 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		C21381B01AC05E6800F41193 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		C2E3691F1AA0CB02001B24DE /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
 		C2E369201AA0CB02001B24DE /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		FBB700D01AC1AE7F00CB21A5 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		FBB700D11AC1AE7F00CB21A5 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +77,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		830C243B1A9E353A00FBAD6A /* Teacher_and_account */ = {
+		830C243B1A9E353A00FBAD6A /* Skeleton Classes */ = {
 			isa = PBXGroup;
 			children = (
 				C2E3691F1AA0CB02001B24DE /* Section.h */,
@@ -83,8 +86,10 @@
 				83DDFB061A9CD62B00A2D594 /* Teacher.m */,
 				830C243C1A9E357A00FBAD6A /* Account.h */,
 				830C243D1A9E357A00FBAD6A /* Account.m */,
+				FBB700D01AC1AE7F00CB21A5 /* Student.h */,
+				FBB700D11AC1AE7F00CB21A5 /* Student.m */,
 			);
-			name = Teacher_and_account;
+			name = "Skeleton Classes";
 			sourceTree = "<group>";
 		};
 		83DDFAD01A9CD12300A2D594 = {
@@ -108,7 +113,7 @@
 		83DDFADB1A9CD12300A2D594 /* Class_Discussion */ = {
 			isa = PBXGroup;
 			children = (
-				830C243B1A9E353A00FBAD6A /* Teacher_and_account */,
+				830C243B1A9E353A00FBAD6A /* Skeleton Classes */,
 				83DDFAE01A9CD12300A2D594 /* AppDelegate.h */,
 				C21381AF1AC05E6800F41193 /* TableViewController.h */,
 				C21381B01AC05E6800F41193 /* TableViewController.m */,
@@ -258,6 +263,7 @@
 				83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */,
 				83DDFADF1A9CD12300A2D594 /* main.m in Sources */,
 				C21381B11AC05E6800F41193 /* TableViewController.m in Sources */,
+				FBB700D21AC1AE8000CB21A5 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
