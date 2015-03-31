@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import "CreateAccountViewController.h"
+#import "ForgotPasswordViewController.h"
 
 @interface LoginViewController ()
 
@@ -42,12 +44,19 @@
 */
 
 
+    
+    //Push new view to navigationController stack
+
+
+
 
 - (IBAction)loginButtonPressed:(id)sender {
     
 }
 - (IBAction)createAccountButtonPressed:(id)sender {
-    
+    CreateAccountViewController *createAccountScreen = [CreateAccountViewController alloc];
+    [self.navigationController pushViewController:createAccountScreen animated:YES];
+
 }
 
 - (IBAction)forgotPasswordButtonPressed:(id)sender {
