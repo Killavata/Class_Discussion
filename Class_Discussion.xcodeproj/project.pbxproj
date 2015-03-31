@@ -20,6 +20,9 @@
 		C21381B11AC05E6800F41193 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21381B01AC05E6800F41193 /* TableViewController.m */; };
 		C2E369211AA0CB02001B24DE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E369201AA0CB02001B24DE /* Section.m */; };
 		FBB700D21AC1AE8000CB21A5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB700D11AC1AE7F00CB21A5 /* Student.m */; };
+		FBB700D51AC1B0AD00CB21A5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB700D41AC1B0AD00CB21A5 /* LoginViewController.m */; };
+		FBCDDE191AC31ADC0036204A /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDDE181AC31ADC0036204A /* ForgotPasswordViewController.m */; };
+		FBCDDE1D1AC31B170036204A /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDDE1C1AC31B170036204A /* CreateAccountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		C2E369201AA0CB02001B24DE /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
 		FBB700D01AC1AE7F00CB21A5 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		FBB700D11AC1AE7F00CB21A5 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		FBB700D31AC1B0AD00CB21A5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FBB700D41AC1B0AD00CB21A5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FBCDDE171AC31ADC0036204A /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		FBCDDE181AC31ADC0036204A /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
+		FBCDDE1B1AC31B170036204A /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		FBCDDE1C1AC31B170036204A /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +130,7 @@
 				83DDFAE61A9CD12300A2D594 /* ViewController.h */,
 				83DDFAE71A9CD12300A2D594 /* ViewController.m */,
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
+				FBB700D61AC1B0BF00CB21A5 /* LoginScreen */,
 				83DDFAEC1A9CD12300A2D594 /* Images.xcassets */,
 				83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */,
 				83DDFAE31A9CD12300A2D594 /* Class_Discussion.xcdatamodeld */,
@@ -153,6 +163,35 @@
 				83DDFAFA1A9CD12400A2D594 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBB700D61AC1B0BF00CB21A5 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FBB700D41AC1B0AD00CB21A5 /* LoginViewController.m */,
+				FBB700D31AC1B0AD00CB21A5 /* LoginViewController.h */,
+				FBCDDE1A1AC31AE80036204A /* ForgotPassword */,
+				FBCDDE1E1AC31B1C0036204A /* CreateAccount */,
+			);
+			name = LoginScreen;
+			sourceTree = "<group>";
+		};
+		FBCDDE1A1AC31AE80036204A /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				FBCDDE171AC31ADC0036204A /* ForgotPasswordViewController.h */,
+				FBCDDE181AC31ADC0036204A /* ForgotPasswordViewController.m */,
+			);
+			name = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		FBCDDE1E1AC31B1C0036204A /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				FBCDDE1B1AC31B170036204A /* CreateAccountViewController.h */,
+				FBCDDE1C1AC31B170036204A /* CreateAccountViewController.m */,
+			);
+			name = CreateAccount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,12 +294,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCDDE191AC31ADC0036204A /* ForgotPasswordViewController.m in Sources */,
 				83DDFAE21A9CD12300A2D594 /* AppDelegate.m in Sources */,
 				83DDFAE51A9CD12300A2D594 /* Class_Discussion.xcdatamodeld in Sources */,
 				83DDFAE81A9CD12300A2D594 /* ViewController.m in Sources */,
 				830C243E1A9E357A00FBAD6A /* Account.m in Sources */,
+				FBB700D51AC1B0AD00CB21A5 /* LoginViewController.m in Sources */,
 				C2E369211AA0CB02001B24DE /* Section.m in Sources */,
 				83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */,
+				FBCDDE1D1AC31B170036204A /* CreateAccountViewController.m in Sources */,
 				83DDFADF1A9CD12300A2D594 /* main.m in Sources */,
 				C21381B11AC05E6800F41193 /* TableViewController.m in Sources */,
 				FBB700D21AC1AE8000CB21A5 /* Student.m in Sources */,
