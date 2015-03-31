@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GwX-ez-Awf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GwX-ez-Awf">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Login Controller-->
         <scene sceneID="ug0-Dr-eWB">
             <objects>
-                <viewController storyboardIdentifier="Login Controller" title="Login Controller" id="cZL-gw-1RP" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login Screen" title="Login Controller" id="cZL-gw-1RP" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JKt-X3-X7x"/>
                         <viewControllerLayoutGuide type="bottom" id="aYO-hB-Mnw"/>
@@ -15,13 +15,111 @@
                     <view key="view" contentMode="scaleToFill" id="a0Y-Pc-JCG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="JYG-la-CAO">
+                                <rect key="frame" x="224" y="219" width="153" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.03368941567" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="175-Io-wvA">
+                                <rect key="frame" x="140" y="383" width="130" height="30"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="11"/>
+                                <state key="normal" title="Create new account">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.03368941567" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="nZ9-Bl-BQT"/>
+                                    <action selector="forgotPasswordButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="2vP-yK-jvS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fi8-9L-cn6">
+                                <rect key="frame" x="347" y="382" width="117" height="30"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="11"/>
+                                <state key="normal" title="Forgot Password">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.03368941567" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forgotPasswordButton:" destination="cZL-gw-1RP" eventType="touchUpInside" id="Xt0-9e-dGS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBE-4G-7WS">
+                                <rect key="frame" x="224" y="324" width="153" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.03368941567259931" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="cZL-gw-1RP" eventType="touchUpInside" id="ak9-kG-1hV"/>
+                                    <action selector="loginButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="hPL-6O-QXt"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="YaY-ww-eYb">
+                                <rect key="frame" x="224" y="268" width="153" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.03368941567259931" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label=""/>
                     </view>
                     <navigationItem key="navigationItem" id="rvt-ic-2ge"/>
+                    <connections>
+                        <outlet property="createAccountButton" destination="175-Io-wvA" id="Yan-hk-igG"/>
+                        <outlet property="createAccountButtonPressed" destination="175-Io-wvA" id="wKh-LC-qcL"/>
+                        <outlet property="forgotPasswordButtonPressed" destination="Fi8-9L-cn6" id="oJk-6o-JhF"/>
+                        <outlet property="loginButton" destination="nBE-4G-7WS" id="ca2-ya-3Jf"/>
+                        <outlet property="loginButtonPressed" destination="nBE-4G-7WS" id="qlo-1b-IBR"/>
+                        <outlet property="passwordTextField" destination="YaY-ww-eYb" id="Fd5-f7-xoi"/>
+                        <outlet property="usernameTextField" destination="JYG-la-CAO" id="Nic-9s-aoe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYL-2L-HyY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1756" y="-166"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="Icc-lc-7Lc">
+            <objects>
+                <viewController storyboardIdentifier="Forgot Password " id="e8N-Qg-BVJ" customClass="ForgotPasswordViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g3k-VY-HdK"/>
+                        <viewControllerLayoutGuide type="bottom" id="rFw-6i-sK3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RbO-E7-qhv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fim-Pc-uRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1756" y="-844"/>
+        </scene>
+        <!--Create Account View Controller-->
+        <scene sceneID="edw-XO-BKi">
+            <objects>
+                <viewController storyboardIdentifier="Create Account" id="7F1-ov-xvq" customClass="CreateAccountViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3yY-mn-zNN"/>
+                        <viewControllerLayoutGuide type="bottom" id="9sY-pR-uzk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x9w-i1-FAR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiJ-aX-OHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1006" y="-166"/>
         </scene>
         <!--Classes-->
         <scene sceneID="G2A-AB-C9h">
@@ -48,7 +146,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UB0-rx-zda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1746" y="520"/>
+            <point key="canvasLocation" x="-1756" y="523"/>
         </scene>
         <!--Students-->
         <scene sceneID="Ual-KL-wye">
