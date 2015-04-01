@@ -53,8 +53,9 @@
 - (IBAction)loginButtonPressed:(id)sender {
     
 }
+
 - (IBAction)createAccountButtonPressed:(id)sender {
-    CreateAccountViewController *createAccountScreen = [CreateAccountViewController alloc];
+    CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Create Account"];
     [self.navigationController pushViewController:createAccountScreen animated:YES];
 
 }

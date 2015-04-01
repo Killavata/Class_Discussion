@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GwX-ez-Awf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GwX-ez-Awf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -31,8 +31,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="createAccountButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="nZ9-Bl-BQT"/>
-                                    <action selector="forgotPasswordButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="2vP-yK-jvS"/>
+                                    <action selector="createAccountButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="AFF-zx-CsJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fi8-9L-cn6">
@@ -43,7 +42,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="forgotPasswordButton:" destination="cZL-gw-1RP" eventType="touchUpInside" id="Xt0-9e-dGS"/>
+                                    <action selector="forgotPasswordButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="nWH-ca-UIW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBE-4G-7WS">
@@ -55,8 +54,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButton:" destination="cZL-gw-1RP" eventType="touchUpInside" id="ak9-kG-1hV"/>
-                                    <action selector="loginButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="hPL-6O-QXt"/>
+                                    <action selector="loginButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="Lct-pV-lkI"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="YaY-ww-eYb">
@@ -72,11 +70,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="rvt-ic-2ge"/>
                     <connections>
-                        <outlet property="createAccountButton" destination="175-Io-wvA" id="Yan-hk-igG"/>
-                        <outlet property="createAccountButtonPressed" destination="175-Io-wvA" id="wKh-LC-qcL"/>
-                        <outlet property="forgotPasswordButtonPressed" destination="Fi8-9L-cn6" id="oJk-6o-JhF"/>
-                        <outlet property="loginButton" destination="nBE-4G-7WS" id="ca2-ya-3Jf"/>
-                        <outlet property="loginButtonPressed" destination="nBE-4G-7WS" id="qlo-1b-IBR"/>
                         <outlet property="passwordTextField" destination="YaY-ww-eYb" id="Fd5-f7-xoi"/>
                         <outlet property="usernameTextField" destination="JYG-la-CAO" id="Nic-9s-aoe"/>
                     </connections>
