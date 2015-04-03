@@ -51,8 +51,13 @@
 
 
 - (IBAction)loginButtonPressed:(id)sender {
-    
-}
+    if(([_usernameTextField.text  isEqual:@"Teacher"])&& ([_passwordTextField.text isEqual:@"password"])){
+        NSLog(@"hi");
+    }
+    else{
+        NSLog(@"bye");
+    }
+    }
 
 - (IBAction)createAccountButtonPressed:(id)sender {
     CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Create Account"];
@@ -61,6 +66,8 @@
 }
 
 - (IBAction)forgotPasswordButtonPressed:(id)sender {
+    ForgotPasswordViewController *forgotPasswordScreen = (ForgotPasswordViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Forgot Password"];
+    [self.navigationController pushViewController:forgotPasswordScreen animated:YES];
 }
 
 
