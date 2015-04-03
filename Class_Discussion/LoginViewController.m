@@ -9,6 +9,8 @@
 #import "LoginViewController.h"
 #import "CreateAccountViewController.h"
 #import "ForgotPasswordViewController.h"
+#import "Teacher.h"
+#import "TableViewController.h"
 
 @interface LoginViewController ()
 
@@ -52,7 +54,8 @@
 
 - (IBAction)loginButtonPressed:(id)sender {
     if(([_usernameTextField.text  isEqual:@"Teacher"])&& ([_passwordTextField.text isEqual:@"password"])){
-        NSLog(@"hi");
+        TableViewController *studentScreen = (TableViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Student Screen"];
+        [self.navigationController pushViewController:studentScreen animated:YES];
     }
     else{
         NSLog(@"bye");
