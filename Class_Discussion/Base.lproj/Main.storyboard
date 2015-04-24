@@ -156,6 +156,30 @@
             </objects>
             <point key="canvasLocation" x="-1756" y="508"/>
         </scene>
+        <!--Class Builder View Controller-->
+        <scene sceneID="kmq-kT-W5X">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQl-W7-MOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="table builder" id="CKY-Wq-gBk" customClass="classBuilderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KD0-WR-B3T"/>
+                        <viewControllerLayoutGuide type="bottom" id="y8m-NU-2zI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zFQ-6g-nHx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6kY-ic-akM">
+                                <rect key="frame" x="199" y="182" width="122" height="143"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1756" y="1226"/>
+        </scene>
         <!--Timer-->
         <scene sceneID="2Bl-xg-2Eb">
             <objects>
