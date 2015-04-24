@@ -153,12 +153,21 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="tst-9W-7Bo"/>
                 </tableViewController>
+<<<<<<< HEAD
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UB0-rx-zda" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1756" y="523"/>
         </scene>
         <!--Students-->
         <scene sceneID="Ual-KL-wye">
+=======
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAB-aI-PIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1756" y="508"/>
+        </scene>
+        <!--Timer-->
+        <scene sceneID="2Bl-xg-2Eb">
+>>>>>>> origin/Bakker
             <objects>
                 <tableViewController storyboardIdentifier="Students" title="Students" id="PS5-al-Rau" customClass="StudentsList" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="a2t-Cb-Q7T">
