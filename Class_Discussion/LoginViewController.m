@@ -53,23 +53,13 @@
 
 
 - (IBAction)loginButtonPressed:(id)sender {
-<<<<<<< HEAD
   //  if ([_usernameTextField.text isEqual:@"Teacher"] && [_passwordTextField.text isEqual:@"password"]){
         CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Classes"];
         [self.navigationController pushViewController:createAccountScreen animated:YES];
 
    // }
 }
-=======
-    if(([_usernameTextField.text  isEqual:@"Teacher"])&& ([_passwordTextField.text isEqual:@"password"])){
-        TableViewController *studentScreen = (TableViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Student Screen"];
-        [self.navigationController pushViewController:studentScreen animated:YES];
-    }
-    else{
-        NSLog(@"bye");
-    }
-    }
->>>>>>> origin/Bakker
+
 
 - (IBAction)createAccountButtonPressed:(id)sender {
     CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Create Account"];
