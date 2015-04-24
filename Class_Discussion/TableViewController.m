@@ -7,12 +7,13 @@
 //
 
 #import "TableViewController.h"
-
+#import "TimerViewController.h"
 
 
 @interface TableViewController (){
     NSDictionary *students;
     NSArray *nameSectionTitles;
+
 }
 
 @end
@@ -31,6 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     students = @{@"B" : @[@"bob", @"bill",@"brittany"],
                  @"C" :@[@"colin",@"",@"chris",@"cooper"],
                  @"D" : @[@"Doris"],
@@ -46,7 +48,8 @@
                  @"W" : @[@"Water Polo"]};
     
     nameSectionTitles = [[students allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
-    // Do any additional setup after loading the view, typically from a nib.
+   
+       // Do any additional setup after loading the view, typically from a nib.
 }
 - (void)didReceiveMemoryWarning
 {
@@ -54,13 +57,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSString *)getImageFilename:(NSString *)sport
+/*- (NSString *)getImageFilename:(NSString *)sport
 {
     NSString *imageFilename = [[sport lowercaseString] stringByReplacingOccurrencesOfString:@" " withString:@"_"];
     imageFilename = [imageFilename stringByAppendingString:@".jpg"];
     
     return imageFilename;
-}
+}*/
 
 #pragma mark - Table view data source
 
@@ -88,14 +91,14 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
     NSString *sectionTitle = [nameSectionTitles objectAtIndex:indexPath.section];
     NSArray *sectionName = [students objectForKey:sectionTitle];
     NSString *name = [sectionName objectAtIndex:indexPath.row];
     cell.textLabel.text = name;
-    cell.imageView.image = [UIImage imageNamed:[self getImageFilename:name]];
+   // cell.imageView.image = [UIImage imageNamed:[self getImageFilename:name]];
     
     return cell;
     
@@ -113,16 +116,10 @@
     NSString *sectionTitle = [nameSectionTitles objectAtIndex:indexPath.section];
     NSArray *sectionNames = [students objectForKey:sectionTitle];
     NSString *rowValue =  [sectionNames objectAtIndex:indexPath.row];
-    if ([rowValue isEqualToString:(@"Lacrosse")]){
-        NSString *message= [[NSString alloc] initWithFormat:@"You Selected %@ ,Lacrosse is the offical sport of the empire. Often played by boys with hair like girls,they generally are academically inferior, and altogether inferior to baseball players",rowValue];
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Sport Selected!" message:message delegate:nil cancelButtonTitle:@"DONE" otherButtonTitles:nil, nil];
-        [alert show];
-    }
-    else{
-        NSString *message= [[NSString alloc] initWithFormat:@"You Selected %@",rowValue];
+            NSString *message= [[NSString alloc] initWithFormat:@"You Selected %@",rowValue];
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Student Selected!" message:message delegate:nil cancelButtonTitle:@"DONE" otherButtonTitles:nil, nil];
         [alert show];
-    }
-    
+    UIViewController *timerScreen = (UIViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Timer Screen"];
+    [self.navigationController pushViewController:timerScreen animated:YES];
 }
 @end
