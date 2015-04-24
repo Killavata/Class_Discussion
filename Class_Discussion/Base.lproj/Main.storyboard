@@ -157,10 +157,6 @@
             </objects>
             <point key="canvasLocation" x="-1756" y="523"/>
         </scene>
-<<<<<<< HEAD
-        <!--Students-->
-        <scene sceneID="Ual-KL-wye">
-=======
         <!--Class Builder View Controller-->
         <scene sceneID="kmq-kT-W5X">
             <objects>
@@ -188,9 +184,8 @@
             </objects>
             <point key="canvasLocation" x="-1756" y="1226"/>
         </scene>
-        <!--Timer-->
+        <!--Students-->
         <scene sceneID="2Bl-xg-2Eb">
->>>>>>> Bakker
             <objects>
                 <tableViewController storyboardIdentifier="Students" title="Students" id="PS5-al-Rau" customClass="StudentsList" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="a2t-Cb-Q7T">
@@ -213,7 +208,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAB-aI-PIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1742" y="1208"/>
+            <point key="canvasLocation" x="-1540" y="1275"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MDy-ch-3pX">
