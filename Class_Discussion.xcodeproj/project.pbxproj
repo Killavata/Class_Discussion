@@ -22,7 +22,9 @@
 		83DDFAFC1A9CD12400A2D594 /* Class_DiscussionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */; };
 		83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFB061A9CD62B00A2D594 /* Teacher.m */; };
 		C21381B11AC05E6800F41193 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21381B01AC05E6800F41193 /* TableViewController.m */; };
+		C23017231AD2D2D0004D0305 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23017221AD2D2D0004D0305 /* TimerViewController.m */; };
 		C2E369211AA0CB02001B24DE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E369201AA0CB02001B24DE /* Section.m */; };
+		C2F8211C1ADEC21500647FC0 /* classBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8211B1ADEC21500647FC0 /* classBuilderViewController.m */; };
 		FBB700D21AC1AE8000CB21A5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB700D11AC1AE7F00CB21A5 /* Student.m */; };
 		FBB700D51AC1B0AD00CB21A5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB700D41AC1B0AD00CB21A5 /* LoginViewController.m */; };
 		FBCDDE191AC31ADC0036204A /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDDE181AC31ADC0036204A /* ForgotPasswordViewController.m */; };
@@ -66,8 +68,12 @@
 		83DDFB061A9CD62B00A2D594 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 		C21381AF1AC05E6800F41193 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		C21381B01AC05E6800F41193 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		C23017211AD2D2D0004D0305 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		C23017221AD2D2D0004D0305 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		C2E3691F1AA0CB02001B24DE /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
 		C2E369201AA0CB02001B24DE /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
+		C2F8211A1ADEC21500647FC0 /* classBuilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classBuilderViewController.h; sourceTree = "<group>"; };
+		C2F8211B1ADEC21500647FC0 /* classBuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = classBuilderViewController.m; sourceTree = "<group>"; };
 		FBB700D01AC1AE7F00CB21A5 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		FBB700D11AC1AE7F00CB21A5 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		FBB700D31AC1B0AD00CB21A5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -163,6 +169,10 @@
 				83DDFAE61A9CD12300A2D594 /* ViewController.h */,
 				83DDFAE71A9CD12300A2D594 /* ViewController.m */,
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
+				C2F8211A1ADEC21500647FC0 /* classBuilderViewController.h */,
+				C2F8211B1ADEC21500647FC0 /* classBuilderViewController.m */,
+				C23017211AD2D2D0004D0305 /* TimerViewController.h */,
+				C23017221AD2D2D0004D0305 /* TimerViewController.m */,
 				FBB700D61AC1B0BF00CB21A5 /* LoginScreen */,
 				83DDFAEC1A9CD12300A2D594 /* Images.xcassets */,
 				83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */,
@@ -337,12 +347,14 @@
 				83AA41191AE53E8100005A45 /* StudentsList.m in Sources */,
 				FBB700D51AC1B0AD00CB21A5 /* LoginViewController.m in Sources */,
 				C2E369211AA0CB02001B24DE /* Section.m in Sources */,
+				C23017231AD2D2D0004D0305 /* TimerViewController.m in Sources */,
 				83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */,
 				FBCDDE1D1AC31B170036204A /* CreateAccountViewController.m in Sources */,
 				83DDFADF1A9CD12300A2D594 /* main.m in Sources */,
 				C21381B11AC05E6800F41193 /* TableViewController.m in Sources */,
 				83AA41111AD41DCD00005A45 /* ClassesList.m in Sources */,
 				FBB700D21AC1AE8000CB21A5 /* Student.m in Sources */,
+				C2F8211C1ADEC21500647FC0 /* classBuilderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

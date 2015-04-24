@@ -9,6 +9,8 @@
 #import "LoginViewController.h"
 #import "CreateAccountViewController.h"
 #import "ForgotPasswordViewController.h"
+#import "Teacher.h"
+#import "TableViewController.h"
 
 @interface LoginViewController ()
 
@@ -58,6 +60,7 @@
    // }
 }
 
+
 - (IBAction)createAccountButtonPressed:(id)sender {
     CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Create Account"];
     [self.navigationController pushViewController:createAccountScreen animated:YES];
@@ -65,6 +68,8 @@
 }
 
 - (IBAction)forgotPasswordButtonPressed:(id)sender {
+    ForgotPasswordViewController *forgotPasswordScreen = (ForgotPasswordViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Forgot Password"];
+    [self.navigationController pushViewController:forgotPasswordScreen animated:YES];
 }
 
 
