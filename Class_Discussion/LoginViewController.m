@@ -51,7 +51,11 @@
 
 
 - (IBAction)loginButtonPressed:(id)sender {
-    
+  //  if ([_usernameTextField.text isEqual:@"Teacher"] && [_passwordTextField.text isEqual:@"password"]){
+        CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Classes"];
+        [self.navigationController pushViewController:createAccountScreen animated:YES];
+
+   // }
 }
 
 - (IBAction)createAccountButtonPressed:(id)sender {
