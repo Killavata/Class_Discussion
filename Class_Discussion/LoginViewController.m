@@ -9,6 +9,8 @@
 #import "LoginViewController.h"
 #import "CreateAccountViewController.h"
 #import "ForgotPasswordViewController.h"
+#import "Teacher.h"
+#import "TableViewController.h"
 
 @interface LoginViewController ()
 
@@ -51,12 +53,14 @@
 
 
 - (IBAction)loginButtonPressed:(id)sender {
-  //  if ([_usernameTextField.text isEqual:@"Teacher"] && [_passwordTextField.text isEqual:@"password"]){
-        CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Classes"];
-        [self.navigationController pushViewController:createAccountScreen animated:YES];
-
-   // }
-}
+    if(([_usernameTextField.text  isEqual:@"Teacher"])&& ([_passwordTextField.text isEqual:@"password"])){
+        TableViewController *studentScreen = (TableViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Student Screen"];
+        [self.navigationController pushViewController:studentScreen animated:YES];
+    }
+    else{
+        NSLog(@"bye");
+    }
+    }
 
 - (IBAction)createAccountButtonPressed:(id)sender {
     CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Create Account"];
@@ -65,6 +69,8 @@
 }
 
 - (IBAction)forgotPasswordButtonPressed:(id)sender {
+    ForgotPasswordViewController *forgotPasswordScreen = (ForgotPasswordViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Forgot Password"];
+    [self.navigationController pushViewController:forgotPasswordScreen animated:YES];
 }
 
 
