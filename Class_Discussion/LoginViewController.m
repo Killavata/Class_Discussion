@@ -46,8 +46,7 @@
 */
 
 
-    
-    //Push new view to navigationController stack
+
 
 
 
@@ -62,16 +61,20 @@
     }
     }
 
+
 - (IBAction)createAccountButtonPressed:(id)sender {
     CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Create Account"];
     [self.navigationController pushViewController:createAccountScreen animated:YES];
 
 }
 
-- (IBAction)forgotPasswordButtonPressed:(id)sender {
+
+//Forgot password button pressed
+//Code isn't needed because of the storyboard connection
+/*- (IBAction)forgotPasswordButtonPressed:(id)sender {
     ForgotPasswordViewController *forgotPasswordScreen = (ForgotPasswordViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Forgot Password"];
     [self.navigationController pushViewController:forgotPasswordScreen animated:YES];
 }
-
+*/
 
 @end
