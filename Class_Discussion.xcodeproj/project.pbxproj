@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		830C243E1A9E357A00FBAD6A /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C243D1A9E357A00FBAD6A /* Account.m */; };
+		83AA41111AD41DCD00005A45 /* ClassesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AA41101AD41DCD00005A45 /* ClassesList.m */; };
+		83AA41161AE53CBE00005A45 /* Classes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83AA41151AE53CBE00005A45 /* Classes.plist */; };
+		83AA41191AE53E8100005A45 /* StudentsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AA41181AE53E8100005A45 /* StudentsList.m */; };
+		83AA411C1AE5419100005A45 /* Working Students.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83AA411B1AE5419100005A45 /* Working Students.plist */; };
 		83DDFADF1A9CD12300A2D594 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFADE1A9CD12300A2D594 /* main.m */; };
 		83DDFAE21A9CD12300A2D594 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAE11A9CD12300A2D594 /* AppDelegate.m */; };
 		83DDFAE51A9CD12300A2D594 /* Class_Discussion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAE31A9CD12300A2D594 /* Class_Discussion.xcdatamodeld */; };
@@ -18,9 +22,7 @@
 		83DDFAFC1A9CD12400A2D594 /* Class_DiscussionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAFB1A9CD12400A2D594 /* Class_DiscussionTests.m */; };
 		83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFB061A9CD62B00A2D594 /* Teacher.m */; };
 		C21381B11AC05E6800F41193 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C21381B01AC05E6800F41193 /* TableViewController.m */; };
-		C23017231AD2D2D0004D0305 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23017221AD2D2D0004D0305 /* TimerViewController.m */; };
 		C2E369211AA0CB02001B24DE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E369201AA0CB02001B24DE /* Section.m */; };
-		C2F8211C1ADEC21500647FC0 /* classBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8211B1ADEC21500647FC0 /* classBuilderViewController.m */; };
 		FBB700D21AC1AE8000CB21A5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB700D11AC1AE7F00CB21A5 /* Student.m */; };
 		FBB700D51AC1B0AD00CB21A5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB700D41AC1B0AD00CB21A5 /* LoginViewController.m */; };
 		FBCDDE191AC31ADC0036204A /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDDE181AC31ADC0036204A /* ForgotPasswordViewController.m */; };
@@ -40,6 +42,12 @@
 /* Begin PBXFileReference section */
 		830C243C1A9E357A00FBAD6A /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		830C243D1A9E357A00FBAD6A /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		83AA410F1AD41DCD00005A45 /* ClassesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassesList.h; sourceTree = "<group>"; };
+		83AA41101AD41DCD00005A45 /* ClassesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassesList.m; sourceTree = "<group>"; };
+		83AA41151AE53CBE00005A45 /* Classes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Classes.plist; sourceTree = "<group>"; };
+		83AA41171AE53E8100005A45 /* StudentsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsList.h; sourceTree = "<group>"; };
+		83AA41181AE53E8100005A45 /* StudentsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsList.m; sourceTree = "<group>"; };
+		83AA411B1AE5419100005A45 /* Working Students.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Working Students.plist"; sourceTree = "<group>"; };
 		83DDFAD91A9CD12300A2D594 /* Class_Discussion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Class_Discussion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83DDFADD1A9CD12300A2D594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83DDFADE1A9CD12300A2D594 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,12 +66,8 @@
 		83DDFB061A9CD62B00A2D594 /* Teacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Teacher.m; sourceTree = "<group>"; };
 		C21381AF1AC05E6800F41193 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		C21381B01AC05E6800F41193 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		C23017211AD2D2D0004D0305 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
-		C23017221AD2D2D0004D0305 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		C2E3691F1AA0CB02001B24DE /* Section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Section.h; sourceTree = "<group>"; };
 		C2E369201AA0CB02001B24DE /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
-		C2F8211A1ADEC21500647FC0 /* classBuilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classBuilderViewController.h; sourceTree = "<group>"; };
-		C2F8211B1ADEC21500647FC0 /* classBuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = classBuilderViewController.m; sourceTree = "<group>"; };
 		FBB700D01AC1AE7F00CB21A5 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		FBB700D11AC1AE7F00CB21A5 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		FBB700D31AC1B0AD00CB21A5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -107,9 +111,30 @@
 			name = "Skeleton Classes";
 			sourceTree = "<group>";
 		};
+		83AA41121AD41DE900005A45 /* ClassesList */ = {
+			isa = PBXGroup;
+			children = (
+				83AA410F1AD41DCD00005A45 /* ClassesList.h */,
+				83AA41101AD41DCD00005A45 /* ClassesList.m */,
+			);
+			name = ClassesList;
+			sourceTree = "<group>";
+		};
+		83AA411A1AE53E9100005A45 /* StudentsList */ = {
+			isa = PBXGroup;
+			children = (
+				83AA41171AE53E8100005A45 /* StudentsList.h */,
+				83AA41181AE53E8100005A45 /* StudentsList.m */,
+			);
+			name = StudentsList;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		83DDFAD01A9CD12300A2D594 = {
 			isa = PBXGroup;
 			children = (
+				83AA41151AE53CBE00005A45 /* Classes.plist */,
+				83AA411B1AE5419100005A45 /* Working Students.plist */,
 				83DDFADB1A9CD12300A2D594 /* Class_Discussion */,
 				83DDFAF81A9CD12400A2D594 /* Class_DiscussionTests */,
 				83DDFADA1A9CD12300A2D594 /* Products */,
@@ -128,6 +153,8 @@
 		83DDFADB1A9CD12300A2D594 /* Class_Discussion */ = {
 			isa = PBXGroup;
 			children = (
+				83AA41121AD41DE900005A45 /* ClassesList */,
+				83AA411A1AE53E9100005A45 /* StudentsList */,
 				830C243B1A9E353A00FBAD6A /* Skeleton Classes */,
 				83DDFAE01A9CD12300A2D594 /* AppDelegate.h */,
 				C21381AF1AC05E6800F41193 /* TableViewController.h */,
@@ -136,10 +163,6 @@
 				83DDFAE61A9CD12300A2D594 /* ViewController.h */,
 				83DDFAE71A9CD12300A2D594 /* ViewController.m */,
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
-				C2F8211A1ADEC21500647FC0 /* classBuilderViewController.h */,
-				C2F8211B1ADEC21500647FC0 /* classBuilderViewController.m */,
-				C23017211AD2D2D0004D0305 /* TimerViewController.h */,
-				C23017221AD2D2D0004D0305 /* TimerViewController.m */,
 				FBB700D61AC1B0BF00CB21A5 /* LoginScreen */,
 				83DDFAEC1A9CD12300A2D594 /* Images.xcassets */,
 				83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */,
@@ -285,7 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				83DDFAEB1A9CD12300A2D594 /* Main.storyboard in Resources */,
+				83AA41161AE53CBE00005A45 /* Classes.plist in Resources */,
 				83DDFAF01A9CD12300A2D594 /* LaunchScreen.xib in Resources */,
+				83AA411C1AE5419100005A45 /* Working Students.plist in Resources */,
 				83DDFAED1A9CD12300A2D594 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,15 +334,15 @@
 				83DDFAE51A9CD12300A2D594 /* Class_Discussion.xcdatamodeld in Sources */,
 				83DDFAE81A9CD12300A2D594 /* ViewController.m in Sources */,
 				830C243E1A9E357A00FBAD6A /* Account.m in Sources */,
+				83AA41191AE53E8100005A45 /* StudentsList.m in Sources */,
 				FBB700D51AC1B0AD00CB21A5 /* LoginViewController.m in Sources */,
 				C2E369211AA0CB02001B24DE /* Section.m in Sources */,
-				C23017231AD2D2D0004D0305 /* TimerViewController.m in Sources */,
 				83DDFB071A9CD62B00A2D594 /* Teacher.m in Sources */,
 				FBCDDE1D1AC31B170036204A /* CreateAccountViewController.m in Sources */,
 				83DDFADF1A9CD12300A2D594 /* main.m in Sources */,
 				C21381B11AC05E6800F41193 /* TableViewController.m in Sources */,
+				83AA41111AD41DCD00005A45 /* ClassesList.m in Sources */,
 				FBB700D21AC1AE8000CB21A5 /* Student.m in Sources */,
-				C2F8211C1ADEC21500647FC0 /* classBuilderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
