@@ -27,6 +27,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    if ([_passwordTextField respondsToSelector:@selector(setAttributedPlaceholder:)]) {
+        _passwordTextField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"Password" attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    }
     // Do any additional setup after loading the view.
 }
 
