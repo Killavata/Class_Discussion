@@ -171,23 +171,18 @@
         Student* newStudent = [[StudentStore sharedStore] createStudent];
     
     StudentDetailViewController *detailViewController = [[StudentDetailViewController alloc] initForNewStudent:YES];
-    NSLog(@"Initialized new controller");
     
     detailViewController.student = newStudent;
-    NSLog(@"Passed student to the controller");
     
     detailViewController.dismissBlock = ^{
         [self.tableView reloadData];
     };
-    NSLog (@"Reloaded data in the table");
     
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
-    NSLog(@"initialized new controller");
     
     navController.modalPresentationStyle = UIModalPresentationFormSheet;
     
     [self presentViewController:navController animated:YES completion:NULL];
-    NSLog(@"Presented new controller");
     
     
 }
