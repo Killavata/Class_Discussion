@@ -20,6 +20,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cameraButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *assetTypeButton;
+
 - (IBAction)takePicture:(id)sender;
 - (IBAction)backgroundTapped:(id)sender;
 
@@ -43,13 +46,6 @@
                                                                                         target:self                                                                                 action:@selector(cancel:)];
             self.navigationItem.leftBarButtonItem = cancelItem;
         }
-        
-//        // Make sure this is NOT in the if (isNew ) { } block of code
-//        NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
-//        [defaultCenter addObserver:self
-//                          selector:@selector(updateFonts)
-//                              name:UIContentSizeCategoryDidChangeNotification
-//                            object:nil];
     }
     
     return self;
@@ -66,6 +62,7 @@
 
 
 - (void) viewWillAppear:(BOOL)animated{
+            NSLog(@"Detail viewWillAppear completed");
     [super viewWillAppear:animated];
     
     Student *student = self.student;
@@ -95,12 +92,58 @@
         // Clear the imageView
         self.imageView.image = nil;
     }
-
     
+//    NSString *typeLabel = [self.item.assetType valueForKey:@"label"];
+//    if (!typeLabel) {
+//        typeLabel = @"None";
+//    }
+//    
+//   // self.assetTypeButton.title = [NSString stringWithFormat:@"Type: %@", typeLabel];
+//    
+//    [self updateFonts];
+//
+
 }
 
-- (void) viewDidAppear:(BOOL)animated{
-        NSLog(@"View appeared");
+- (void) viewDidLoad{
+        [super viewDidLoad];
+        
+        UIImageView *iv = [[UIImageView alloc] initWithImage:nil];
+        
+        // The contentMode of the image view in the XIB was Aspect Fit:
+        iv.contentMode = UIViewContentModeScaleAspectFit;
+        
+        // Do not produce a translated constraint for this view
+        iv.translatesAutoresizingMaskIntoConstraints = NO;
+        
+        // The image view was a subview of the view
+        [self.view addSubview:iv];
+        
+        // The image view was pointed to by the imageView property
+        self.imageView = iv;
+        
+        NSDictionary *nameMap = @{@"imageView": self.imageView,
+                                  @"dateLabel": self.dateLabel,
+                                  @"toolbar": self.toolbar};
+        
+        // imageView is 0 pts from superview at left and right edges
+        NSArray *horizontalConstraints =
+        [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[imageView]-0-|"
+                                                options:0
+                                                metrics:nil
+                                                  views:nameMap];
+        
+        // imaveView is 8 pts from dateLabel at its top edge...
+        // ... and 8 pts from toolbar at its bottom edge
+        NSArray *verticalConstraints =
+        [NSLayoutConstraint constraintsWithVisualFormat:@"V:[dateLabel]-[imageView]-[toolbar]"
+                                                options:0
+                                                metrics:nil
+                                                  views:nameMap];
+        
+        [self.view addConstraints:horizontalConstraints];
+        [self.view addConstraints:verticalConstraints];
+
 }
 
 - (void) viewWillDisappear:(BOOL)animated{
@@ -130,6 +173,18 @@
     
     [self.presentingViewController dismissViewControllerAnimated:YES completion:self.dismissBlock];
 }
+
+//- (void)updateFonts
+//{
+//    UIFont *font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+//    
+//    self.nameLabel.font = font;
+//    self.serialNumberLabel.font = font;
+//    self.valueLabel.font = font;
+//    self.dateLabel.font = font;
+//    
+//    self.nameField.font = font;
+//}
 
 
 - (void) setStudent:(Student *)student{

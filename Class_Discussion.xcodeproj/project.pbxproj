@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		830C243E1A9E357A00FBAD6A /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C243D1A9E357A00FBAD6A /* Account.m */; };
 		83AA41111AD41DCD00005A45 /* ClassesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AA41101AD41DCD00005A45 /* ClassesList.m */; };
-		83AA41161AE53CBE00005A45 /* Classes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83AA41151AE53CBE00005A45 /* Classes.plist */; };
 		83AA41191AE53E8100005A45 /* StudentsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AA41181AE53E8100005A45 /* StudentsList.m */; };
 		83CC7B1E1AEFCF4B00F9EAEC /* classBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CC7B1D1AEFCF4B00F9EAEC /* classBuilderViewController.m */; };
 		83CC7B221AEFD08800F9EAEC /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CC7B211AEFD08800F9EAEC /* TimerViewController.m */; };
@@ -24,7 +23,6 @@
 		83DDFADF1A9CD12300A2D594 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFADE1A9CD12300A2D594 /* main.m */; };
 		83DDFAE21A9CD12300A2D594 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAE11A9CD12300A2D594 /* AppDelegate.m */; };
 		83DDFAE51A9CD12300A2D594 /* Class_Discussion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAE31A9CD12300A2D594 /* Class_Discussion.xcdatamodeld */; };
-		83DDFAE81A9CD12300A2D594 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83DDFAE71A9CD12300A2D594 /* ViewController.m */; };
 		83DDFAEB1A9CD12300A2D594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83DDFAE91A9CD12300A2D594 /* Main.storyboard */; };
 		83DDFAED1A9CD12300A2D594 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DDFAEC1A9CD12300A2D594 /* Images.xcassets */; };
 		83DDFAF01A9CD12300A2D594 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DDFAEE1A9CD12300A2D594 /* LaunchScreen.xib */; };
@@ -51,7 +49,6 @@
 		830C243D1A9E357A00FBAD6A /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		83AA410F1AD41DCD00005A45 /* ClassesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassesList.h; sourceTree = "<group>"; };
 		83AA41101AD41DCD00005A45 /* ClassesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassesList.m; sourceTree = "<group>"; };
-		83AA41151AE53CBE00005A45 /* Classes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Classes.plist; sourceTree = "<group>"; };
 		83AA41171AE53E8100005A45 /* StudentsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsList.h; sourceTree = "<group>"; };
 		83AA41181AE53E8100005A45 /* StudentsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsList.m; sourceTree = "<group>"; };
 		83CC7B1C1AEFCF4B00F9EAEC /* classBuilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classBuilderViewController.h; sourceTree = "<group>"; };
@@ -79,8 +76,6 @@
 		83DDFAE01A9CD12300A2D594 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		83DDFAE11A9CD12300A2D594 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		83DDFAE41A9CD12300A2D594 /* Class_Discussion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Class_Discussion.xcdatamodel; sourceTree = "<group>"; };
-		83DDFAE61A9CD12300A2D594 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		83DDFAE71A9CD12300A2D594 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		83DDFAEA1A9CD12300A2D594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83DDFAEC1A9CD12300A2D594 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		83DDFAEF1A9CD12300A2D594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -207,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				83CC7B241AEFD58100F9EAEC /* Class_Discussion_Core.xcdatamodeld */,
-				83AA41151AE53CBE00005A45 /* Classes.plist */,
 				83DDFADB1A9CD12300A2D594 /* Class_Discussion */,
 				83DDFAF81A9CD12400A2D594 /* Class_DiscussionTests */,
 				83DDFADA1A9CD12300A2D594 /* Products */,
@@ -236,8 +230,6 @@
 				83CC7B231AEFD0A400F9EAEC /* Timer */,
 				83DDFAE01A9CD12300A2D594 /* AppDelegate.h */,
 				83DDFAE11A9CD12300A2D594 /* AppDelegate.m */,
-				83DDFAE61A9CD12300A2D594 /* ViewController.h */,
-				83DDFAE71A9CD12300A2D594 /* ViewController.m */,
 				83DDFAE91A9CD12300A2D594 /* Main.storyboard */,
 				FBB700D61AC1B0BF00CB21A5 /* LoginScreen */,
 				83DDFAEC1A9CD12300A2D594 /* Images.xcassets */,
@@ -384,7 +376,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				83DDFAEB1A9CD12300A2D594 /* Main.storyboard in Resources */,
-				83AA41161AE53CBE00005A45 /* Classes.plist in Resources */,
 				83DDFAF01A9CD12300A2D594 /* LaunchScreen.xib in Resources */,
 				83DDFAED1A9CD12300A2D594 /* Images.xcassets in Resources */,
 			);
@@ -413,7 +404,6 @@
 				83CC7B3A1AF3B59000F9EAEC /* StudentDetailViewController.m in Sources */,
 				83DDFAE21A9CD12300A2D594 /* AppDelegate.m in Sources */,
 				83DDFAE51A9CD12300A2D594 /* Class_Discussion.xcdatamodeld in Sources */,
-				83DDFAE81A9CD12300A2D594 /* ViewController.m in Sources */,
 				83CC7B311AF1966B00F9EAEC /* StudentCell.m in Sources */,
 				830C243E1A9E357A00FBAD6A /* Account.m in Sources */,
 				83CC7B261AEFD58100F9EAEC /* Class_Discussion_Core.xcdatamodeld in Sources */,

@@ -87,6 +87,9 @@
     
     newStudent.orderingValue = order;
     
+    [self.privateStudents addObject:newStudent];
+    NSLog(@"Succesfully created student");
+    
     return newStudent;
 }
 
@@ -177,7 +180,7 @@
         request.entity = e;
         
         NSSortDescriptor *sd = [NSSortDescriptor
-                                sortDescriptorWithKey:@"grade"
+                                sortDescriptorWithKey:@"orderingValue"
                                 ascending:YES];
         
         request.sortDescriptors = @[sd];
