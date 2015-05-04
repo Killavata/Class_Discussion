@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "CreateAccountViewController.h"
 #import "ForgotPasswordViewController.h"
+#import "StudentsList.h"
 
 @interface LoginViewController ()
 
@@ -52,8 +53,9 @@
 
 - (IBAction)loginButtonPressed:(id)sender {
   //  if ([_usernameTextField.text isEqual:@"Teacher"] && [_passwordTextField.text isEqual:@"password"]){
-        CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Classes"];
-        [self.navigationController pushViewController:createAccountScreen animated:YES];
+        StudentsList *studentsList = (StudentsList*)[self.storyboard instantiateViewControllerWithIdentifier:@"Students"];
+        [self.navigationController pushViewController:studentsList animated:YES];
+    NSLog (@"Push passed");
 
    // }
 }

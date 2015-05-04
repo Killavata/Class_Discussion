@@ -10,6 +10,5 @@
 
 @interface StudentsList : UITableViewController
 
-@property (nonatomic,readwrite) NSString *className;
 
 @end

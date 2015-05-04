@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "StudentsList.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    // Create a StudentsList
+    StudentsList *studentsList = [[StudentsList alloc] init];
+    
+    // Create an instance of a UINavigationController
+    // its stack contains only itemsViewController
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:studentsList];
+    
+    // Place navigation controller's view in the window hierarchy
+    self.window.rootViewController = navController;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

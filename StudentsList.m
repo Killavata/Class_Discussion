@@ -7,47 +7,68 @@
 //
 
 #import "StudentsList.h"
+#import "StudentCell.h"
+#import "Student.h"
+#import "StudentStore.h"
+#import "StudentDetailViewController.h"
+#import "StudentImageStore.h"
+#import "StudentImageViewController.h"
 
-@interface StudentsList ()
 
-@property NSArray *names;
-@property NSMutableArray *workingStudents;
-@property NSIndexPath *checkedIndexPath;
+@interface StudentsList () <UIPopoverControllerDelegate>
+
+@property (nonatomic,strong) UIPopoverController *imagePopover;
+
+
 
 @end
 
 @implementation StudentsList
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
+- (instancetype) init{
+    self = [super initWithStyle:UITableViewStylePlain];
+    
     if (self) {
+        UINavigationItem *navItem = self.navigationItem;
+        navItem.title = @"Students";
+        
+        //Create a new bar button item that will add new item
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewStudent:)];
+        
+        //Set this bar button item as the right item in the navigationItem
+        navItem.rightBarButtonItem = bbi;
+        
+        //Set the edit button
+        navItem.leftBarButtonItem = self.editButtonItem;
     }
+    
     return self;
+}
+
+- (instancetype)initWithStyle:(UITableViewStyle)style
+{
+    return [self init];
+}
+
+- (void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    //Sets the name of the particular table on the top
-    self.navigationItem.title=self.className;
+    [self.tableView registerClass:[UITableViewCell class]
+           forCellReuseIdentifier:@"UITableViewCell"];
+    /*
+    //Load the NIB file
+    UINib *nib = [UINib nibWithNibName:@"StudentCell" bundle:nil];
     
-    //Initializes the dictionary and links it to the plist file so all the changes are reflected there
-    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"Classes" ofType:@"plist"];
-    NSMutableDictionary *classes=[[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-    
-    //Initializes an array with names
-    _names=[classes objectForKey:self.className];
-    
-    //Initializes an array with missing students
-    
-    //Indicates path to the file
-    NSString *filePath=[self plistFileDocumentPath:@"Working Students.plist"];
-    
-    //Initializes an array with already existing data
-    _workingStudents = [[NSMutableArray alloc] initWithContentsOfFile: filePath];
-    
+    //Register this NIB, which contains the cell
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"StudentCell"];
+    */
     
     
 }
@@ -69,30 +90,58 @@
 //Specializes how many rows there are in each section
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if ([self.className isEqualToString:@"Working"]){
-        return _workingStudents.count;
-    }
-    else{
-        return _names.count;
-    }
+    return [[[StudentStore sharedStore] allStudents] count];//Counts the number of students
 }
 
 
 //Creates cells in the table
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"NameCell" forIndexPath:indexPath];
-    NSString *name;
+    StudentCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StudentCell" forIndexPath:indexPath];
     
-    // Configure the cell...
-    if ([self.className isEqualToString:@"Working"]){
-        name = [[_workingStudents sortedArrayUsingSelector:@selector(localizedStandardCompare:)] objectAtIndex:indexPath.row];
-    }
-    else{
-        name = [[_names sortedArrayUsingSelector:@selector(localizedStandardCompare:)] objectAtIndex:indexPath.row];
-    }
-    cell.textLabel.text = name;
+    NSArray *students = [[StudentStore sharedStore] allStudents];
+    Student *student = students[indexPath.row];
     
+    //Configure the cell with the students info
+    cell.nameLabel.text = student.fullName;
+    cell.thumbnailView.image = student.thumbnail;
+    
+    __weak StudentCell *weakCell = cell;
+    
+    cell.actionBlock = ^{
+        NSLog(@"Going to show image for %@", student);
+        
+        StudentCell *strongCell = weakCell;
+        
+        if ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
+            NSString *studentKey = student.studentKey;
+            
+            // If there is no image, we don't need to display anything
+            UIImage *img = [[StudentImageStore sharedStore] imageForKey:studentKey];
+            if (!img) {
+                return; }
+            
+            // Make a rectangle for the frame of the thumbnail relative to
+            // our table view
+            CGRect rect = [self.view convertRect:strongCell.thumbnailView.bounds
+                                        fromView:strongCell.thumbnailView];
+            
+            // Create a new BNRImageViewController and set its image
+            StudentImageViewController *ivc = [[StudentImageViewController alloc] init];
+            ivc.image = img;
+            
+            // Present a 600x600 popover from the rect
+            self.imagePopover = [[UIPopoverController alloc]
+                                 initWithContentViewController:ivc];
+            self.imagePopover.delegate = self;
+            self.imagePopover.popoverContentSize = CGSizeMake(600, 600);
+            [self.imagePopover presentPopoverFromRect:rect
+                                               inView:self.view
+                             permittedArrowDirections:UIPopoverArrowDirectionAny
+                                             animated:YES];
+        }
+    };
+
     
     return cell;
 }
@@ -100,86 +149,52 @@
 //What happens when the cell is pressed
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (![self.className isEqualToString:@"Working"]){//Works if we are not in the "Working" category
-        NSString *name = [[_names sortedArrayUsingSelector:@selector(localizedStandardCompare:)] objectAtIndex:indexPath.row];
-        
-        //Puts or removes a check next to the cell
-        UITableViewCell* cell=[tableView cellForRowAtIndexPath:indexPath];
-        if([_checkedIndexPath isEqual:indexPath])
-        {
-            cell.accessoryType=UITableViewCellAccessoryNone;
-            _checkedIndexPath=nil;
-            [self missingStudent:name action:@"remove"];//Removes student from a file
-        }
-        else
-        {
-            cell.accessoryType=UITableViewCellAccessoryCheckmark;
-            _checkedIndexPath=indexPath;
-            [self missingStudent:name action:@"add"];//Adds working student to a file
-        }
-    }
+    
+    StudentDetailViewController *detailViewController = [[StudentDetailViewController alloc] init];
+    
+    NSArray *students = [[StudentStore sharedStore] allStudents];
+    Student *selectedStudent = students[indexPath.row];
+    
+    //Gives new controller information about which student was selected
+    detailViewController.student = selectedStudent;
+    
+    //Push it onto the top of the stack
+    [self.navigationController pushViewController:detailViewController animated:YES];
     
     
 }
 
-//Programmed methods
 
--(void) missingStudent:(NSString*) name action:(NSString*) action{//Writes data to the file
-    //Creates copy of the file
-    [self createPlistCopyInDocuments:@"Working Students.plist"];
+
+- (IBAction)addNewStudent:(id)sender{
+    // Create a new student and add it to the store
+        Student* newStudent = [[StudentStore sharedStore] createStudent];
     
-    //Indicates path to which we will write to
-    NSString *filePath=[self plistFileDocumentPath:@"Working Students.plist"];
+    StudentDetailViewController *detailViewController = [[StudentDetailViewController alloc] initForNewStudent:YES];
     
-    //Adds name to the list if we need to add it
-    if ([action isEqualToString:@"add"]){
-        [_workingStudents addObject:name];
-    }
+    detailViewController.student = newStudent;
     
-    //Removes occurenses of the same name
-    [_workingStudents setArray:[[NSOrderedSet  orderedSetWithArray:_workingStudents] array]];//Removes duplicates
+    detailViewController.dismissBlock = ^{
+        [self.tableView reloadData];
+    };
     
-    //Writes to a file
-    [_workingStudents writeToFile:filePath atomically:YES];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
+    
+    navController.modalPresentationStyle = UIModalPresentationFormSheet;
+    
+    [self presentViewController:navController animated:YES completion:NULL];
+    
+    
+}
+
+//removes image popover
+- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+{
+    self.imagePopover = nil;
 }
 
 
-//Path to the file in documents directory. Path to the file with missing students
--(NSString*) plistFileDocumentPath:(NSString*) plistName{
-    
-    //Create a list of paths
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    
-    //Get a path to a documents directory
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    
-    //Create a full file path
-    NSString *writablePath = [documentsDirectory stringByAppendingPathComponent:@"Working Students.plist"];
-    
-    
-    return writablePath;
-}
 
-
-//Creates a copy of plist file
-- (void)createPlistCopyInDocuments:(NSString *)plistName{
-    BOOL success;
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSError *error;
-    
-    NSString *plistFilePath = [self plistFileDocumentPath:plistName];
-    
-    success = [fileManager fileExistsAtPath:plistFilePath];//Checks if file on the specified path exists
-    
-    if (success) {//If exists then no need to create copy
-        return;
-    }
-    
-    //If file doesn't exist
-    NSString *defaultPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:plistName];//Path to a file in a bundle directory
-    success = [fileManager copyItemAtPath:defaultPath toPath:plistFilePath error:&error];
-    
-}
 
 
 /*
@@ -190,23 +205,29 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
+        NSArray *students = [[StudentStore sharedStore] allStudents];
+        Student *student = students[indexPath.row];
+        [[StudentStore sharedStore] removeStudent:student];
+        
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
-/*
+
+
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+    [[StudentStore sharedStore] moveItemAtIndex:fromIndexPath.row toIndex:toIndexPath.row];
+    
 }
-*/
+
 
 /*
 // Override to support conditional rearranging of the table view.

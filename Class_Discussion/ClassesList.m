@@ -85,17 +85,7 @@
 //What happens when the cell is pressed
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //Value Selected by user
-    NSString *class = [[[_classes allKeys] sortedArrayUsingSelector:@selector(localizedStandardCompare:)] objectAtIndex:indexPath.row];
-    
-    //Initialize new viewController
-    StudentsList *newStudentsList = (StudentsList*)[self.storyboard instantiateViewControllerWithIdentifier:@"Students"];
-    
-    //Pass selected value to a property declared in TableController
-    newStudentsList.className = class;
-    
-    //Push new view to navigationController stack
-    [self.navigationController pushViewController:newStudentsList animated:YES];
+   
 }
 
 
