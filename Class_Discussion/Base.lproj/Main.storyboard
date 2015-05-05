@@ -305,6 +305,7 @@
                             <action selector="backgroundTapped:" destination="5TN-mC-90D" eventType="touchUpInside" id="WKI-VV-fua"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="FXa-nY-TFt"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="dateLabel" destination="l8a-Pf-Yj2" id="CLA-cp-F1F"/>
@@ -322,13 +323,13 @@
         <!--Navigation Controller-->
         <scene sceneID="MDy-ch-3pX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TmF-zg-FtW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="GwX-ez-Awf" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oZX-Ia-lt1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TmF-zg-FtW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2734" y="296"/>
         </scene>

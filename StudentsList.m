@@ -60,15 +60,12 @@
 {
     [super viewDidLoad];
     
-    [self.tableView registerClass:[UITableViewCell class]
-           forCellReuseIdentifier:@"UITableViewCell"];
-    /*
     //Load the NIB file
     UINib *nib = [UINib nibWithNibName:@"StudentCell" bundle:nil];
     
     //Register this NIB, which contains the cell
     [self.tableView registerNib:nib forCellReuseIdentifier:@"StudentCell"];
-    */
+    
     
     
 }
@@ -178,11 +175,13 @@
         [self.tableView reloadData];
     };
     
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
+//    
+//    navController.modalPresentationStyle = UIModalPresentationFormSheet;
+//    
+//    [self presentViewController:navController animated:YES completion:NULL];
     
-    navController.modalPresentationStyle = UIModalPresentationFormSheet;
-    
-    [self presentViewController:navController animated:YES completion:NULL];
+    [self.navigationController presentViewController:detailViewController animated:YES completion:NULL];
     
     
 }

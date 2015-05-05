@@ -177,7 +177,7 @@
         request.entity = e;
         
         NSSortDescriptor *sd = [NSSortDescriptor
-                                sortDescriptorWithKey:@"grade"
+                                sortDescriptorWithKey:@"orderingValue"
                                 ascending:YES];
         
         request.sortDescriptors = @[sd];

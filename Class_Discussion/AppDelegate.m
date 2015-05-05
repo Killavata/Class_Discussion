@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "StudentsList.h"
+#import "Student.h"
+#import "StudentDetailViewController.h"
+#import "StudentStore.h"
 
 @interface AppDelegate ()
 
@@ -33,6 +36,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
