@@ -21,6 +21,9 @@
 		C23017231AD2D2D0004D0305 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23017221AD2D2D0004D0305 /* TimerViewController.m */; };
 		C2E369211AA0CB02001B24DE /* Section.m in Sources */ = {isa = PBXBuildFile; fileRef = C2E369201AA0CB02001B24DE /* Section.m */; };
 		C2F8211C1ADEC21500647FC0 /* classBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F8211B1ADEC21500647FC0 /* classBuilderViewController.m */; };
+		FB1E4B8E1AFA566C004ACCEF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1E4B8D1AFA566C004ACCEF /* CFNetwork.framework */; };
+		FB1E4BE01AFA70BC004ACCEF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1E4BDF1AFA70BC004ACCEF /* UIKit.framework */; };
+		FB1E4BE21AFA710F004ACCEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1E4BE11AFA710F004ACCEF /* Foundation.framework */; };
 		FBB700D21AC1AE8000CB21A5 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB700D11AC1AE7F00CB21A5 /* Student.m */; };
 		FBB700D51AC1B0AD00CB21A5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB700D41AC1B0AD00CB21A5 /* LoginViewController.m */; };
 		FBCDDE191AC31ADC0036204A /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDDE181AC31ADC0036204A /* ForgotPasswordViewController.m */; };
@@ -64,6 +67,9 @@
 		C2E369201AA0CB02001B24DE /* Section.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Section.m; sourceTree = "<group>"; };
 		C2F8211A1ADEC21500647FC0 /* classBuilderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = classBuilderViewController.h; sourceTree = "<group>"; };
 		C2F8211B1ADEC21500647FC0 /* classBuilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = classBuilderViewController.m; sourceTree = "<group>"; };
+		FB1E4B8D1AFA566C004ACCEF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FB1E4BDF1AFA70BC004ACCEF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FB1E4BE11AFA710F004ACCEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FBB700D01AC1AE7F00CB21A5 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		FBB700D11AC1AE7F00CB21A5 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		FBB700D31AC1B0AD00CB21A5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1E4BE21AFA710F004ACCEF /* Foundation.framework in Frameworks */,
+				FB1E4BE01AFA70BC004ACCEF /* UIKit.framework in Frameworks */,
+				FB1E4B8E1AFA566C004ACCEF /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +119,9 @@
 		83DDFAD01A9CD12300A2D594 = {
 			isa = PBXGroup;
 			children = (
+				FB1E4BE11AFA710F004ACCEF /* Foundation.framework */,
+				FB1E4BDF1AFA70BC004ACCEF /* UIKit.framework */,
+				FB1E4B8D1AFA566C004ACCEF /* CFNetwork.framework */,
 				83DDFADB1A9CD12300A2D594 /* Class_Discussion */,
 				83DDFAF81A9CD12400A2D594 /* Class_DiscussionTests */,
 				83DDFADA1A9CD12300A2D594 /* Products */,
@@ -393,9 +405,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -429,8 +445,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -442,8 +462,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Class_Discussion/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -453,8 +477,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Class_Discussion/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

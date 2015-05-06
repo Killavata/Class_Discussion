@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GwX-ez-Awf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GwX-ez-Awf">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Login Controller-->
@@ -31,7 +31,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="createAccountButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="AFF-zx-CsJ"/>
+                                    <action selector="createAccountButtonPressed:" destination="cZL-gw-1RP" eventType="touchUpInside" id="A9f-zB-Ch1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fi8-9L-cn6">
@@ -81,7 +81,7 @@
         <!--Forgot Password View Controller-->
         <scene sceneID="Icc-lc-7Lc">
             <objects>
-                <viewController storyboardIdentifier="Forgot Password " id="e8N-Qg-BVJ" customClass="ForgotPasswordViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Forgot Password" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e8N-Qg-BVJ" customClass="ForgotPasswordViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g3k-VY-HdK"/>
                         <viewControllerLayoutGuide type="bottom" id="rFw-6i-sK3"/>
@@ -90,15 +90,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forgot Password Screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw7-5k-ApG">
-                                <rect key="frame" x="206" y="289" width="189" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password Recovery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw7-5k-ApG">
+                                <rect key="frame" x="42" y="45" width="516" height="101"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.1199872273" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter the email address you provided when you set up your account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFZ-Vu-UEe">
+                                <rect key="frame" x="42" y="266" width="516" height="101"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="11"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.1199872273" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PK2-97-pio">
+                                <rect key="frame" x="16" y="429" width="568" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.1199872273" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Send">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendEmailButton:" destination="e8N-Qg-BVJ" eventType="touchUpInside" id="tWO-bp-hCd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Adress:" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IEq-22-Nzf">
+                                <rect key="frame" x="169" y="222" width="263" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.18643208610000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.18643208610000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.78792740520000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="emailAdressTextField" destination="IEq-22-Nzf" id="QzH-kG-mZz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fim-Pc-uRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,12 +139,12 @@
         <!--Create Account View Controller-->
         <scene sceneID="edw-XO-BKi">
             <objects>
-                <viewController storyboardIdentifier="Create Account" id="7F1-ov-xvq" customClass="CreateAccountViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Create Account" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7F1-ov-xvq" customClass="CreateAccountViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3yY-mn-zNN"/>
                         <viewControllerLayoutGuide type="bottom" id="9sY-pR-uzk"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="x9w-i1-FAR">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Create Account" id="x9w-i1-FAR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -122,14 +154,14 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.03368941567" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="139-Zr-bku">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="139-Zr-bku">
                                 <rect key="frame" x="211" y="223" width="178" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.03368941567" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirm Password" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gbh-pV-UrC">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gbh-pV-UrC">
                                 <rect key="frame" x="211" y="285" width="178" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.03368941567" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -158,11 +190,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="ConfirmPasswordTextField" destination="x9w-i1-FAR" id="cQC-87-VUH"/>
-                        <outlet property="confirmPasswordTextField" destination="Gbh-pV-UrC" id="g51-nj-Mgy"/>
-                        <outlet property="createAccountButton" destination="9VC-c4-lY8" id="Tq6-ik-v8G"/>
-                        <outlet property="emailTextField" destination="rNF-xO-L2I" id="0Wr-cJ-6hy"/>
-                        <outlet property="passwordTextField" destination="139-Zr-bku" id="etR-n2-pjJ"/>
+                        <outlet property="confirmPasswordTextField" destination="Gbh-pV-UrC" id="eZg-o0-OQx"/>
+                        <outlet property="emailTextField" destination="rNF-xO-L2I" id="Ily-kE-3HZ"/>
+                        <outlet property="passwordTextField" destination="139-Zr-bku" id="0tk-1G-R1E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wiJ-aX-OHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -235,36 +265,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qv-GR-kg5">
-                                <rect key="frame" x="101" y="157" width="415" height="202"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <rect key="frame" x="93" y="155" width="415" height="202"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="50"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBw-7A-VIa">
-                                <rect key="frame" x="272" y="427" width="33" height="30"/>
+                                <rect key="frame" x="256" y="427" width="88" height="30"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
                                 <state key="normal" title="Start">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.1199872273" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="startTimer:" destination="3NP-lS-bcJ" eventType="touchUpInside" id="n1g-g1-JXS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ku-Oi-H8e">
-                                <rect key="frame" x="265" y="474" width="31" height="30"/>
-                                <state key="normal" title="stop">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Stop:" destination="3NP-lS-bcJ" eventType="touchUpInside" id="pT8-hU-NET"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xna-0b-oT3">
-                                <rect key="frame" x="344" y="388" width="127" height="30"/>
-                                <state key="normal" title="go to table creator">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="27" y="541" width="547" height="22"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.1199872273" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <state key="normal" title="Edit Table">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="goToTableCreator:" destination="3NP-lS-bcJ" eventType="touchUpInside" id="xcc-BD-mjy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ku-Oi-H8e">
+                                <rect key="frame" x="270" y="470" width="60" height="30"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.1199872273" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Stop:" destination="3NP-lS-bcJ" eventType="touchUpInside" id="pT8-hU-NET"/>
                                 </connections>
                             </button>
                         </subviews>
