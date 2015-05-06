@@ -156,32 +156,23 @@
             </objects>
             <point key="canvasLocation" x="-1756" y="508"/>
         </scene>
-        <!--Class Builder View Controller-->
-        <scene sceneID="kmq-kT-W5X">
+        <!--Class Creator View Controller-->
+        <scene sceneID="jkT-9z-x72">
             <objects>
-                <viewController storyboardIdentifier="table builder" id="CKY-Wq-gBk" customClass="classBuilderViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="table builder" id="OCm-gG-eLr" customClass="ClassCreatorViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KD0-WR-B3T"/>
-                        <viewControllerLayoutGuide type="bottom" id="y8m-NU-2zI"/>
+                        <viewControllerLayoutGuide type="top" id="Gnb-G0-KbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="lgf-QA-oCg"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zFQ-6g-nHx">
+                    <view key="view" contentMode="scaleToFill" id="15w-rD-1Mk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gG3-yC-key">
-                                <rect key="frame" x="157" y="86" width="377" height="373"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="circle" destination="gG3-yC-key" id="oOh-lA-wmv"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YQl-W7-MOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4g-V6-WvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1756" y="1226"/>
+            <point key="canvasLocation" x="-1777" y="1219"/>
         </scene>
         <!--Timer-->
         <scene sceneID="2Bl-xg-2Eb">
