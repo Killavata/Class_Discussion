@@ -147,7 +147,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    StudentDetailViewController *detailViewController = [[StudentDetailViewController alloc] init];
+    StudentDetailViewController *detailViewController = [[StudentDetailViewController alloc] initForNewStudent:NO];
     
     NSArray *students = [[StudentStore sharedStore] allStudents];
     Student *selectedStudent = students[indexPath.row];
@@ -175,13 +175,12 @@
         [self.tableView reloadData];
     };
     
-//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
-//    
-//    navController.modalPresentationStyle = UIModalPresentationFormSheet;
-//    
-//    [self presentViewController:navController animated:YES completion:NULL];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:detailViewController];
     
-    [self.navigationController presentViewController:detailViewController animated:YES completion:NULL];
+    navController.modalPresentationStyle = UIModalPresentationFormSheet;
+    
+    [self presentViewController:navController animated:YES completion:NULL];
+    
     
     
 }

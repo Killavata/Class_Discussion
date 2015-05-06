@@ -20,6 +20,15 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
+@property (nonatomic, strong) UIPopoverController *imagePickerPopover;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cameraButton;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *yearLabel;
+@property (weak, nonatomic) IBOutlet UILabel *gradeLabel;
+
+
 - (IBAction)takePicture:(id)sender;
 - (IBAction)backgroundTapped:(id)sender;
 
@@ -29,7 +38,7 @@
 
 - (instancetype)initForNewStudent:(BOOL)isNew
 {
-    self = [super initWithNibName:nil bundle:nil];
+   self = [super initWithNibName:@"StudentDetail" bundle:nil];
     
     if (self) {
         if (isNew) {
@@ -61,7 +70,13 @@
     [defaultCenter removeObserver:self];
 }
 
-
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    @throw [NSException exceptionWithName:@"Wrong initializer"
+                                   reason:@"Use initForNewItem:"
+                                 userInfo:nil];
+    return nil;
+}
 
 
 
@@ -103,6 +118,50 @@
         NSLog(@"View appeared");
 }
 
+- (void) viewDidLoad{
+    [super viewDidLoad];
+    
+
+    
+    UIImageView *iv = [[UIImageView alloc] initWithImage:nil];
+    
+    // The contentMode of the image view in the XIB was Aspect Fit:
+    iv.contentMode = UIViewContentModeScaleAspectFit;
+    
+    // Do not produce a translated constraint for this view
+    iv.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    // The image view was a subview of the view
+    [self.view addSubview:iv];
+    
+    // The image view was pointed to by the imageView property
+    self.imageView = iv;
+    
+    NSDictionary *nameMap = @{@"imageView": self.imageView,
+                              @"dateLabel": self.dateLabel,
+                              @"toolbar": self.toolbar};
+    
+    // imageView is 0 pts from superview at left and right edges
+    NSArray *horizontalConstraints =
+    [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[imageView]-0-|"
+                                            options:0
+                                            metrics:nil
+                                              views:nameMap];
+    
+    // imaveView is 8 pts from dateLabel at its top edge...
+    // ... and 8 pts from toolbar at its bottom edge
+    NSArray *verticalConstraints =
+    [NSLayoutConstraint constraintsWithVisualFormat:@"V:[dateLabel]-[imageView]-[toolbar]"
+                                            options:0
+                                            metrics:nil
+                                              views:nameMap];
+    
+    [self.view addConstraints:horizontalConstraints];
+    [self.view addConstraints:verticalConstraints];
+
+    
+}
+
 - (void) viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     
@@ -121,6 +180,7 @@
 - (void)save:(id)sender
 {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:self.dismissBlock];
+    NSLog(@"Student saved");
 }
 
 - (void)cancel:(id)sender

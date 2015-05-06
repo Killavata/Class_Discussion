@@ -37,7 +37,7 @@
 - (instancetype) initPrivate{
     self = [super init];
     if (self){
-        //Read in homepwner.xcdatamodeld
+        //Read Class_Discussion.xcdatamodeld
         _model = [NSManagedObjectModel mergedModelFromBundles:nil];
         
         NSPersistentStoreCoordinator *psc = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:_model];
@@ -70,7 +70,7 @@
 
 //Returns real array when addressed from outside
 - (NSArray *) allStudents{
-    return self.privateStudents;
+    return [self.privateStudents copy];
 }
 
 - (Student *) createStudent{
@@ -87,7 +87,10 @@
     
     newStudent.orderingValue = order;
     
+    [self.privateStudents addObject:newStudent];
+    
     return newStudent;
+  
 }
 
 

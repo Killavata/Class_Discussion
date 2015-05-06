@@ -19,7 +19,7 @@
 @property (nonatomic,strong) NSDate * dateCreated;
 @property (nonatomic,strong) NSString * studentKey;
 @property (nonatomic, retain) UIImage* thumbnail;
-@property (nonatomic, strong) NSData * thumbnailData;
+//@property (nonatomic, strong) NSData * thumbnailData;
 @property (nonatomic) double orderingValue;
 
 @property (nonatomic, retain) NSManagedObject *section;

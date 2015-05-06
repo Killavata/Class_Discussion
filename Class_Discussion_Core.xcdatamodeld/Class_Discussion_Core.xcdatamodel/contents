@@ -12,7 +12,6 @@
         <attribute name="orderingValue" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="studentKey" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="thumbnail" optional="YES" attributeType="Transformable" valueTransformerName="ImageTransformer" syncable="YES"/>
-        <attribute name="thumbnailData" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="year" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="section" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Section" inverseName="students" inverseEntity="Section" syncable="YES"/>
     </entity>
@@ -25,7 +24,7 @@
     </entity>
     <elements>
         <element name="Section" positionX="-54" positionY="18" width="128" height="88"/>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="Student" positionX="-63" positionY="-18" width="128" height="165"/>
         <element name="Teacher" positionX="-36" positionY="27" width="128" height="118"/>
     </elements>
 </model>
