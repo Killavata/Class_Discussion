@@ -78,6 +78,41 @@
             </objects>
             <point key="canvasLocation" x="-1756" y="-166"/>
         </scene>
+        <!--Home Screen View Controller-->
+        <scene sceneID="tPD-ke-fzq">
+            <objects>
+                <viewController storyboardIdentifier="Home Screen" id="vnw-yF-vlb" customClass="HomeScreenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cJr-U9-H9s"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qyy-uG-Zee"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rLA-u7-JWn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home screen, tableView of sections with ability to add and edit goes here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTo-b1-ahM">
+                                <rect key="frame" x="32" y="181" width="562" height="237"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8l-Ih-983">
+                                <rect key="frame" x="260" y="426" width="170" height="30"/>
+                                <state key="normal" title="Honors English: Period 4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToStudentScreen:" destination="vnw-yF-vlb" eventType="touchUpInside" id="MDP-NC-5iQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mEk-mp-ZmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1757" y="508"/>
+        </scene>
         <!--Forgot Password View Controller-->
         <scene sceneID="Icc-lc-7Lc">
             <objects>
@@ -223,7 +258,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QAB-aI-PIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1756" y="508"/>
+            <point key="canvasLocation" x="-1006" y="1233"/>
         </scene>
         <!--Class Builder View Controller-->
         <scene sceneID="kmq-kT-W5X">
@@ -313,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5r2-Ar-qQR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1006" y="518"/>
+            <point key="canvasLocation" x="-1006" y="508"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MDy-ch-3pX">

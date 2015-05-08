@@ -11,6 +11,7 @@
 #import "ForgotPasswordViewController.h"
 #import "Teacher.h"
 #import "TableViewController.h"
+#import "HomeScreenViewController.h";
 
 @interface LoginViewController ()
 
@@ -19,6 +20,7 @@
 - (IBAction)loginButtonPressed:(id)sender;
 - (IBAction)createAccountButtonPressed:(id)sender;
 - (IBAction)forgotPasswordButtonPressed:(id)sender;
+-(void)invalidLogin;
 
 
 @end
@@ -57,14 +59,22 @@
 
 - (IBAction)loginButtonPressed:(id)sender {
     if(([_usernameTextField.text  isEqual:@"Teacher"])&& ([_passwordTextField.text isEqual:@"password"])){
-        TableViewController *studentScreen = (TableViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Student Screen"];
-        [self.navigationController pushViewController:studentScreen animated:YES];
+        HomeScreenViewController *homeScreen = (HomeScreenViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Home Screen"];
+        [self.navigationController pushViewController:homeScreen animated:YES];
     }
-    else{
-        NSLog(@"bye");
-    }
+    else
+        [self invalidLogin];
     }
 
+-(void)invalidLogin{
+    UIAlertView * loginFailureAlert =[[UIAlertView alloc ] initWithTitle: @"Invalid Email or Password"
+                                                              message:@"Please Try Again"
+                                                             delegate:self
+                                                    cancelButtonTitle:@"Ok"
+                                                    otherButtonTitles: nil];
+    [loginFailureAlert show];
+
+}
 - (IBAction)createAccountButtonPressed:(id)sender {
     CreateAccountViewController *createAccountScreen = (CreateAccountViewController*)[self.storyboard instantiateViewControllerWithIdentifier:@"Create Account"];
     [self.navigationController pushViewController:createAccountScreen animated:YES];
