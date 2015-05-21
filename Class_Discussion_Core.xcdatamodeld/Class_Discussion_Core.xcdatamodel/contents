@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Section" syncable="YES">
+    <entity name="Section" representedClassName="Section" syncable="YES">
+        <attribute name="orderingValue" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sectionKey" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sectionName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="students" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="section" inverseEntity="Student" syncable="YES"/>
         <relationship name="teacher" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Teacher" inverseName="sections" inverseEntity="Teacher" syncable="YES"/>
@@ -23,8 +25,8 @@
         <relationship name="sections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Section" inverseName="teacher" inverseEntity="Section" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Section" positionX="-54" positionY="18" width="128" height="88"/>
-        <element name="Student" positionX="-63" positionY="-18" width="128" height="165"/>
+        <element name="Section" positionX="-54" positionY="18" width="128" height="118"/>
+        <element name="Student" positionX="-63" positionY="-18" width="128" height="163"/>
         <element name="Teacher" positionX="-36" positionY="27" width="128" height="118"/>
     </elements>
 </model>

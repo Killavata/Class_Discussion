@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface Section : NSObject
+@interface Section : NSManagedObject
+
+@property (nonatomic, retain) NSString * sectionName;
+@property (nonatomic,strong) NSString * sectionKey;
+@property (nonatomic) double orderingValue;
+
+@property (nonatomic, retain) NSManagedObject *student;
 
 @end

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		830C243E1A9E357A00FBAD6A /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C243D1A9E357A00FBAD6A /* Account.m */; };
-		83AA41111AD41DCD00005A45 /* ClassesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AA41101AD41DCD00005A45 /* ClassesList.m */; };
 		83AA41161AE53CBE00005A45 /* Classes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83AA41151AE53CBE00005A45 /* Classes.plist */; };
 		83AA41191AE53E8100005A45 /* StudentsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 83AA41181AE53E8100005A45 /* StudentsList.m */; };
 		83CC7B1E1AEFCF4B00F9EAEC /* classBuilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CC7B1D1AEFCF4B00F9EAEC /* classBuilderViewController.m */; };
@@ -51,8 +50,6 @@
 /* Begin PBXFileReference section */
 		830C243C1A9E357A00FBAD6A /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		830C243D1A9E357A00FBAD6A /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
-		83AA410F1AD41DCD00005A45 /* ClassesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassesList.h; sourceTree = "<group>"; };
-		83AA41101AD41DCD00005A45 /* ClassesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassesList.m; sourceTree = "<group>"; };
 		83AA41151AE53CBE00005A45 /* Classes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Classes.plist; sourceTree = "<group>"; };
 		83AA41171AE53E8100005A45 /* StudentsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsList.h; sourceTree = "<group>"; };
 		83AA41181AE53E8100005A45 /* StudentsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsList.m; sourceTree = "<group>"; };
@@ -134,15 +131,6 @@
 				830C243D1A9E357A00FBAD6A /* Account.m */,
 			);
 			name = "Skeleton Classes";
-			sourceTree = "<group>";
-		};
-		83AA41121AD41DE900005A45 /* ClassesList */ = {
-			isa = PBXGroup;
-			children = (
-				83AA410F1AD41DCD00005A45 /* ClassesList.h */,
-				83AA41101AD41DCD00005A45 /* ClassesList.m */,
-			);
-			name = ClassesList;
 			sourceTree = "<group>";
 		};
 		83AA411A1AE53E9100005A45 /* StudentsList */ = {
@@ -232,7 +220,6 @@
 		83DDFADB1A9CD12300A2D594 /* Class_Discussion */ = {
 			isa = PBXGroup;
 			children = (
-				83AA41121AD41DE900005A45 /* ClassesList */,
 				83CC7B3B1AF3B59700F9EAEC /* StudentDetails */,
 				83AA411A1AE53E9100005A45 /* StudentsList */,
 				83CC7B421AF74D3300F9EAEC /* StudentImageController */,
@@ -433,7 +420,6 @@
 				FBCDDE1D1AC31B170036204A /* CreateAccountViewController.m in Sources */,
 				83DDFADF1A9CD12300A2D594 /* main.m in Sources */,
 				83CC7B1E1AEFCF4B00F9EAEC /* classBuilderViewController.m in Sources */,
-				83AA41111AD41DCD00005A45 /* ClassesList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

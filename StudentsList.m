@@ -118,6 +118,7 @@
             if (!img) {
                 return; }
             
+            
             // Make a rectangle for the frame of the thumbnail relative to
             // our table view
             CGRect rect = [self.view convertRect:strongCell.thumbnailView.bounds
@@ -126,6 +127,7 @@
             // Create a new BNRImageViewController and set its image
             StudentImageViewController *ivc = [[StudentImageViewController alloc] init];
             ivc.image = img;
+            
             
             // Present a 600x600 popover from the rect
             self.imagePopover = [[UIPopoverController alloc]
@@ -136,6 +138,7 @@
                                                inView:self.view
                              permittedArrowDirections:UIPopoverArrowDirectionAny
                                              animated:YES];
+            
         }
     };
 

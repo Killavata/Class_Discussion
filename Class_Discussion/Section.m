@@ -7,7 +7,22 @@
 //
 
 #import "Section.h"
+@import CoreData;
+
+@interface Section()
+
+@end
 
 @implementation Section
+
+-(void) awakeFromInsert{
+    [super awakeFromInsert];
+    
+    
+    //Create an NSUUID object - and get its string representation
+    NSUUID *uuid = [[NSUUID alloc] init];
+    NSString *key = [uuid UUIDString];
+    self.sectionKey = key;
+}
 
 @end
